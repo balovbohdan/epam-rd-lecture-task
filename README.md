@@ -30,7 +30,7 @@ For now you can open `index.html` in you browser. Use browser's console to run q
 # Quick commands
 There are some quick commands you can run in a browser's console to test your implementation
 of the provided tasks.
-## Memory management
+### Memory management
 ```javascript
 // Test if the implementation is working correctly.
 memoryManagement.testFunctions();
@@ -38,7 +38,7 @@ memoryManagement.testFunctions();
 // Run benchmarks to see how fast your functions are.
 memoryManagement.benchmarkFunctions();
 ```
-## Errors handling
+### Errors handling
 ```javascript
 // coming soon...
 ```
