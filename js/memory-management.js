@@ -1,6 +1,6 @@
 // Quick commands, you can use in a browser console:
-// 1. "testFunctions" to check if your implementation is correct.
-// 2. "benchmarkFunctions" to test speed of your functions.
+// 1. "memoryManagement.testFunctions()" to check if your implementation is correct.
+// 2. "memoryManagement.benchmarkFunctions()" to test speed of your functions.
 
 //////////////////////////////////////////////////////
 
@@ -18,16 +18,17 @@ function powByRecursion(number, exponent) {
 
 // Function "benchmarkFunctions" will help you to test
 // speed of "powByCycle" and "powByRecursion" functions.
-//Results of the benchmark will show you what implementation
-// (recursion or cycle) is faster.
+// Results of the benchmark will show you what implementation
+// (recursion or cycle) is faster. Run "memoryManagement.benchmarkFunctions()"
+// in browser's console to get results.
 
 function benchmarkFunctions() {
-  const functions = [testFunction, powByRecursion];
+  const functions = [powByCycle, powByRecursion];
 
   for (let fn of functions) {
-    const result = benchmarkFunction(fn);
+    const passedTime = benchmarkFunction(fn);
 
-    console.log(`Benchmark: ${fn.name} took ${timePassed} ms`);
+    console.log(`Benchmark: ${fn.name} took ${passedTime} ms`);
   }
 }
 
@@ -39,17 +40,17 @@ function benchmarkFunction(fn, fnArgs = [], iterationsQty = 1000) {
   }
 
   return (performance.now() - start).toFixed(4);
-};
+}
 
 //////////////////////////////////////////////////////
 
 // Function "testFunctions" will help you to check if
 // your implementations of "powByCycle" and "powByRecursion"
-// functions are correct. Just run "testFunctions()" in the
-// browser's console to check if everything is woring OK.
+// functions are correct. Just run "memoryManagement.testFunctions()" in the
+// browser's console to check if everything is working OK.
 
 function testFunctions() {
-  const functions = [testFunction, powByRecursion];
+  const functions = [powByCycle, powByRecursion];
 
   const testData = [
     [1, 1, 1],
@@ -58,7 +59,7 @@ function testFunctions() {
     [3, 2, 9],
   ];
 
-  const isCorrect = funcions.reduce(
+  const isCorrect = functions.reduce(
     (result, fn) => result && testFunction(fn, testData),
     true,
   );
@@ -86,5 +87,12 @@ function testFunction(fn, data) {
 
   return isCorrect;
 }
+
+//////////////////////////////////////////////////////
+
+const memoryManagement = {
+  testFunctions,
+  benchmarkFunctions,
+};
 
 //////////////////////////////////////////////////////
