@@ -49,6 +49,5 @@ https://github.com/balovbohdan/epam-rd-lecture-task
 # Contributing
 Pull requests are welcome. You can use this code freely for
 your own projects and/or experiments. If you have some questions or proposals
-feel free to
-[message me](mailto:balovbohdan@gmail.com?subject=[GitHub]%20Javascript%20Challenges%20For%20Memory%20Management%20&%20Errors%20Handling)
-or open an [issue](https://github.com/balovbohdan/epam-rd-lecture-task/issues).
+feel free to message me (<balovbohdan@gmail.com>) or open an
+[issue](https://github.com/balovbohdan/epam-rd-lecture-task/issues).
