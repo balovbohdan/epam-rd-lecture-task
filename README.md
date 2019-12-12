@@ -43,7 +43,8 @@ memoryManagement.benchmarkFunctions();
 // coming soon...
 ```
 
-#GitHub repository
+#GitHub Repository
+
 https://github.com/balovbohdan/epam-rd-lecture-task
 
 # Contributing
