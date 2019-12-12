@@ -4,12 +4,15 @@ in JavaScript. These challenges will help you to strength your understanding of 
 topics. Feel free to let me know if you have any questions or proposals. Good luck!
 
 # Installation
-- At first, you have to clone this repository to your local computer. Run the following
+**1. Clone repository**<br>
+At first, you have to clone this repository to your local computer. Run the following
 command in bash:
 ```bash
 git clone https://github.com/balovbohdan/fwd-ann
 ```
-- _(optional)_ Then, if you want, you can rename folder containing code (original one is rather long).
+
+**2. Rename folder _(optional)_**<br>
+Then, if you want, you can rename folder containing code (original one is rather long).
 To rename containing folder, run the following command:
 ```bash
 mv epam-rd-lecture-task new-name
@@ -19,7 +22,9 @@ For example:
 mv epam-rd-lecture-task challenge
 ```
 As a result of this example the folder will be renamed from `epam-rd-lecture-task` to `challenge`.
-- For now you can open `index.html` in you browser. Use browser's console to run quick commands
+
+**3. Add implementation an run tests!**<br>
+For now you can open `index.html` in you browser. Use browser's console to run quick commands
 (see below). Open JavaScript files from `/js/` folder and solve proposed tasks.
 
 # Quick commands
