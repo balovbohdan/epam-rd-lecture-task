@@ -40,8 +40,8 @@ pow(2, 3); // 8
 pow(1, 1); // 1
 ```
 You have to develop two versions of functon:
-1. usion recurion
-2. using cycle
+1. using recurion (`powByRecursion`)
+2. using cycle (`powByCycle`)
 Add your implementations to the `js/memory-management.js` file. Then, run tests by calling `memoryManagement.testFunctions()` in a browser's console to make sure your implementations are correct. If tests pass, run `memoryManagement.benchmarkFunctions()` to explore how fask your functions are.
 ### Errors handling
 _Coming soon..._
