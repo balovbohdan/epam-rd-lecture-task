@@ -7,11 +7,11 @@
 // Please, add your implementation in this block.
 
 function powByCycle(number, exponent) {
-  // implementation...
+  // your implementation...
 }
 
 function powByRecursion(number, exponent) {
-  // implementation...
+  // your implementation...
 }
 
 //////////////////////////////////////////////////////
@@ -25,14 +25,24 @@ function powByRecursion(number, exponent) {
 function benchmarkFunctions() {
   const functions = [powByCycle, powByRecursion];
 
+  const testData = [
+    [100, 1000],
+    [2000, 200],
+    [2412, 3417],
+    [3737, 25253],
+  ];
+
+  const rndIndex = Math.floor(Math.random() * testData.length);
+  const rndArgs = testData[rndIndex];
+
   for (let fn of functions) {
-    const passedTime = benchmarkFunction(fn);
+    const passedTime = benchmarkFunction(fn, rndArgs);
 
     console.log(`Benchmark: ${fn.name} took ${passedTime} ms`);
   }
 }
 
-function benchmarkFunction(fn, fnArgs = [], iterationsQty = 1000) {
+function benchmarkFunction(fn, fnArgs = [], iterationsQty = 10000) {
 	const start = performance.now();
 
   for (let i = 1; i <= iterationsQty; i++) {
@@ -66,6 +76,8 @@ function testFunctions() {
 
   if (!isCorrect) {
     console.error(`Tests are not passed! Check implementation.`);
+  } else {
+    console.log('Tests are successfully passed!');
   }
 }
 
