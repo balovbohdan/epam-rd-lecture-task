@@ -27,6 +27,25 @@ As a result of this example the folder will be renamed from `epam-rd-lecture-tas
 For now you can open `index.html` in you browser. Use browser's console to run quick commands
 (see below). Open JavaScript files from `/js/` folder and solve proposed tasks.
 
+# Tasks
+### Memory management
+You have to develop code to calculate exponentiated number.
+```javascript
+function pow(number, exponent) {
+  // implementation...
+}
+
+pow(2, 2); // 4
+pow(2, 3); // 8
+pow(1, 1); // 1
+```
+You have to develop two versions of functon:
+1. usion recurion
+2. using cycle
+Add your implementations to the `js/memory-management.js` file. Then, run tests by calling `memoryManagement.testFunctions()` in a browser's console to make sure your implementations are correct. If tests pass, run `memoryManagement.benchmarkFunctions()` to explore how fask your functions are.
+### Errors handling
+_Coming soon..._
+
 # Quick commands
 There are some quick commands you can run in a browser's console to test your implementation
 of the provided tasks.
