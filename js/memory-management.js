@@ -7,11 +7,19 @@
 // Please, add your implementation in this block.
 
 function powByCycle(number, exponent) {
-  // your implementation...
+  let result = number;
+
+  for (let i = 1; i < exponent; i++) {
+    result *= number;
+  }
+
+  return result;
 }
 
 function powByRecursion(number, exponent) {
-  // your implementation...
+  return exponent === 0
+    ? 1
+    : number * powByRecursion(number, exponent - 1);
 }
 
 //////////////////////////////////////////////////////
